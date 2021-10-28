@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-## My Arch Linux Base Install in chroot
+## My arch install
 #
 # Swapfile
 dd if=/dev/zero of=/swap/swapfile bs=1G count=2 status=progress
