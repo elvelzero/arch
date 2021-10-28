@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+## My arch install
+#
 
 sudo ufw enable
 sudo ufw status verbose
