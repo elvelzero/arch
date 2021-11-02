@@ -3,26 +3,26 @@
 ## My arch install
 #
 
-echo "=====:=====:===== Enabling ufw =====:=====:====="
+echo "=====:=====:=====                 Enabling ufw                 =====:=====:====="
 sudo ufw enable
 sudo ufw status verbose
 
-echo "=====:=====:===== Make XDG Base Dirs & Move Some Items =====:=====:====="
+echo "=====:=====:=====     Make XDG Base Dirs & Move Some Items     =====:=====:====="
 mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
 mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
 
-echo "=====:=====:===== Update XDG User Dirs & Clone My Config =====:=====:====="
+echo "=====:=====:=====    Update XDG User Dirs & Clone My Config    =====:=====:====="
 xdg-user-dirs-update
 mkdir my/downloads/clone
 cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
-echo "=====:=====:===== Copying my conig file =====:=====:====="
+echo "=====:=====:=====            Copying my config file            =====:=====:====="
 cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
-echo "=====:=====:===== edit /etc/bash.bashrc urself as root =====:=====:====="
+echo "=====:=====:=====     edit /etc/bash.bashrc urself as root     =====:=====:====="
 echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
 echo "=====:=====:=====                 or Relogin                   =====:=====:====="
