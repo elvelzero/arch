@@ -12,7 +12,7 @@ makepkg -si
 cd
 
 echo "=====:=====:===== Installing My Core Packages Part 1 =====:=====:====="
-sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xprop,xsetroot,mkfontdir} xclip xf86-{input-libinput,video-intel} nvidia{,-utils} adobe-source-code-pro-fonts ttf-{cascadia-code,fira-code,jetbrains-mono} && sudo aura -Ax ttf-mononoki && sudo aura -Ax nerd-fonts-mononoki && sudo pacman -S --needed ttf-{baekmuk,hanazono} otf-ipafont adobe-source-han-{sans-{kr,jp},serif-{kr,jp}}-fonts && sudo pacman -S --needed rsync lsof cmake jre{8,11,}-openjdk{,-headless} jdk{8,11,}-openjdk kotlin gradle npm go lua mono ruby rust
+sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xprop,xsetroot,mkfontdir} xclip xf86-{input-libinput,video-intel} nvidia{,-utils} adobe-source-code-pro-fonts ttf-{cascadia-code,fira-code,jetbrains-mono} && sudo aura -Ax ttf-mononoki && sudo aura -Ax nerd-fonts-mononoki && sudo pacman -S --needed ttf-{baekmuk,hanazono} otf-ipafont adobe-source-han-{sans-{kr,jp},serif-{kr,jp}}-fonts && sudo pacman -S --needed rsync lsof cmake jre{8,11,}-openjdk{,-headless} jdk{8,11,}-openjdk kotlin gradle nodejs npm ghc cabal-install stack go lua mono ruby{,-irb} rust
 
 sudo fc-cache -fv
 
@@ -32,8 +32,8 @@ sudo modprobe vboxdrv
 sudo usermod -aG vboxusers ur_username
 sudo pacman -S virtualbox-guest-{iso,utils}
 
-echo "=====:=====:===== Installing IDE =====:=====:====="
-sudo aura -Ax visual-studio-code-bin
+echo "=====:=====:===== Install ur IDE =====:=====:====="
+# sudo aura -Ax visual-studio-code-bin
 # sudo aura -Ax intellij-idea-ce
 # sudo pacman -S netbeans
-sudo aura -Ax android-studio
+# sudo aura -Ax android-studio
