@@ -34,6 +34,7 @@ sudo pacman -S virtualbox-guest-{iso,utils}
 
 echo "=====:=====:===== Install ur IDE =====:=====:====="
 # sudo aura -Ax visual-studio-code-bin
+# Kotlin with vscode: https://www.petanikode.com/kotlin-vscode/
 # sudo aura -Ax intellij-idea-ce
 # sudo pacman -S netbeans
 # sudo aura -Ax android-studio
