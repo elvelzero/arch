@@ -62,16 +62,16 @@ echo "=====:=====:===== Change Your Root Password =====:=====:====="
 passwd
 # Add a user
 echo "=====:=====:===== Adding a user =====:=====:====="
-useradd -mG wheel user
+useradd -mG wheel urUserName
 echo "=====:=====:===== Change Your User Password =====:=====:====="
-passwd user
+passwd urUserName
 EDITOR=vim visudo
 
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
-cp -r /tmp/arch /home/user/
-chown -R user:user /home/user/arch
+cp -r /tmp/arch /home/urUserName/
+chown -R urUserName:urUserName /home/urUserName/arch
 echo "=====:=====:===== Done Copying The Scripts =====:=====:====="
-ls -l /home/user/
+ls -l /home/urUserName/
 
 echo "=====:=====:===== Things Left =====:=====:====="
 echo "         exit umount & reboot. DONE :)         "
