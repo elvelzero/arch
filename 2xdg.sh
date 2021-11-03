@@ -21,7 +21,7 @@ cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
-cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,,xmobar,xmonad,zathura} .config/
+cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 echo "=====:=====:=====     edit /etc/bash.bashrc urself as root     =====:=====:====="
 echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
