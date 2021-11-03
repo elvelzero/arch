@@ -16,10 +16,6 @@ sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xp
 
 sudo fc-cache -fv
 
-echo "=====:=====:=====       Installing youtube-dl        =====:=====:====="
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
-
 echo "=====:=====:=====       Installing unimatrix         =====:=====:====="
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
@@ -50,7 +46,7 @@ sudo pacman -Rns vim
 makepkg -si
 
 echo "=====:=====:===== Installing My Core Packages Part 2 =====:=====:====="
-sudo pacman -S --needed xmonad{,-contrib} xmobar python-pillow kitty{,-terminfo} && sudo aura -Ax google-chrome && sudo aura -Ax spacefm && sudo pacman -S --needed nitrogen picom dmenu rofi scrot && sudo aura -Ax i3lock-color && sudo pacman -S --needed lxappearance qt5ct arc-gtk-theme kvantum-qt5 papirus-icon-theme imagemagick sxiv mpv celluloid ffmpeg tar unzip zip && sudo aura -Ax rar && sudo pacman -S --needed file-roller udisks2 udevil ntfs-3g gvfs{,-mtp} libmtp mtpfs && sudo aura -Ax jmtpfs && sudo pacman -S --needed libreoffice-fresh gimp inkscape obs-studio && sudo aura -Ax olive && sudo pacman -S --needed zathura{,-cb,-djvu,-pdf-mupdf,-ps}
+sudo pacman -S --needed xmonad{,-contrib} xmobar python-pillow kitty{,-terminfo} && sudo aura -Ax google-chrome && sudo aura -Ax spacefm && sudo pacman -S --needed nitrogen picom dmenu rofi scrot yt-dlp && sudo aura -Ax i3lock-color && sudo pacman -S --needed lxappearance qt5ct arc-gtk-theme kvantum-qt5 papirus-icon-theme imagemagick sxiv mpv celluloid ffmpeg tar unzip zip && sudo aura -Ax rar && sudo pacman -S --needed file-roller udisks2 udevil ntfs-3g gvfs{,-mtp} libmtp mtpfs && sudo aura -Ax jmtpfs && sudo pacman -S --needed libreoffice-fresh gimp inkscape obs-studio && sudo aura -Ax olive && sudo pacman -S --needed zathura{,-cb,-djvu,-pdf-mupdf,-ps}
 
 echo "=====:=====:=====           Installing Tex           =====:=====:====="
 sudo pacman -S  texlive{-most,-lang,-bibtexextra}
