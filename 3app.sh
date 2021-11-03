@@ -3,7 +3,7 @@
 ## My arch install
 #
 
-echo "=====:=====:===== Cloning aura-bin & vim-git =====:=====:====="
+echo "=====:=====:=====     Cloning aura-bin & vim-git     =====:=====:====="
 cd my/downloads/clone/
 git clone https://aur.archlinux.org/aura-bin.git
 git clone https://aur.archlinux.org/vim-git.git
@@ -16,15 +16,15 @@ sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xp
 
 sudo fc-cache -fv
 
-echo "=====:=====:===== Installing youtube-dl =====:=====:====="
+echo "=====:=====:=====       Installing youtube-dl        =====:=====:====="
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
-echo "=====:=====:===== Installing unimatrix =====:=====:====="
+echo "=====:=====:=====       Installing unimatrix         =====:=====:====="
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
 
-echo "=====:=====:===== Installing Vim Plugins =====:=====:====="
+echo "=====:=====:=====       Installing Vim Plugins       =====:=====:====="
 git clone https://github.com/lilydjwg/colorizer .config/vim/pack/plugins/start/colorizer/
 git clone https://github.com/vim-airline/vim-airline .config/vim/pack/plugins/start/vim-airline/
 git clone https://github.com/vim-airline/vim-airline-themes .config/vim/pack/plugins/start/vim-airline-themes/
@@ -38,11 +38,11 @@ git clone https://github.com/SirVer/ultisnips .config/vim/pack/plugins/start/ult
 git clone https://github.com/lervag/vimtex .config/vim/pack/plugins/start/vimtex/
 git clone https://github.com/mg979/vim-visual-multi .config/vim/pack/plugins/start/vim-visual-multi/
 
-echo "=====:=====:===== Installing Vim Nord Color Scheme =====:=====:====="
+echo "=====:=====:=====  Installing Vim Nord Color Scheme  =====:=====:====="
 git clone https://github.com/arcticicestudio/nord-vim my/downloads/clone/nord-vim/
 cp -r my/downloads/clone/nord-vim/colors .config/vim/
 
-echo "=====:=====:===== Rebuilding Vim =====:=====:====="
+echo "=====:=====:=====           Rebuilding Vim           =====:=====:====="
 cd my/downloads/clone/vim-git/
 sed -i '46s/disable/enable/' PKGBUILD
 sudo pacman -Rns vim
@@ -51,22 +51,22 @@ makepkg -si
 echo "=====:=====:===== Installing My Core Packages Part 2 =====:=====:====="
 sudo pacman -S --needed xmonad{,-contrib} xmobar python-pillow kitty{,-terminfo} && sudo aura -Ax google-chrome && sudo aura -Ax spacefm && sudo pacman -S --needed nitrogen picom dmenu rofi scrot && sudo aura -Ax i3lock-color && sudo pacman -S --needed lxappearance qt5ct arc-gtk-theme kvantum-qt5 papirus-icon-theme imagemagick sxiv mpv celluloid ffmpeg tar unzip zip && sudo aura -Ax rar && sudo pacman -S --needed file-roller udisks2 udevil ntfs-3g gvfs{,-mtp} libmtp mtpfs && sudo aura -Ax jmtpfs && sudo pacman -S --needed libreoffice-fresh gimp inkscape obs-studio && sudo aura -Ax olive && sudo pacman -S --needed zathura{,-cb,-djvu,-pdf-mupdf,-ps}
 
-echo "=====:=====:===== Installing Tex =====:=====:====="
+echo "=====:=====:=====           Installing Tex           =====:=====:====="
 sudo pacman -S  texlive{-most,-lang,-bibtexextra}
 
-echo "=====:=====:===== Installing Virtual Box =====:=====:====="
+echo "=====:=====:=====       Installing Virtual Box       =====:=====:====="
 sudo pacman -S virtualbox
 sudo modprobe vboxdrv
 sudo usermod -aG vboxusers ur_username
 sudo pacman -S virtualbox-guest-{iso,utils}
 
-echo "=====:=====:===== Install Clamav =====:=====:====="
+echo "=====:=====:=====           Install Clamav           =====:=====:====="
 sudo pacman -S clamav
-echo "=====:=====:===== Updating database =====:=====:====="
+echo "=====:=====:=====         Updating database          =====:=====:====="
 sudo freshclam
 #=====:=====:===== Im not going to enable clamav-freshclam.service & clamav-daemon.service =====:=====:=====
 
-echo "=====:=====:===== Install ur IDE =====:=====:====="
+echo "=====:=====:=====           Install ur IDE           =====:=====:=====
 # sudo aura -Ax visual-studio-code-bin
 # Kotlin with vscode: https://www.petanikode.com/kotlin-vscode/
 # sudo aura -Ax intellij-idea-ce
