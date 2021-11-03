@@ -41,6 +41,7 @@ git clone https://github.com/mg979/vim-visual-multi .config/vim/pack/plugins/sta
 echo "=====:=====:=====  Installing Vim Nord Color Scheme  =====:=====:====="
 git clone https://github.com/arcticicestudio/nord-vim my/downloads/clone/nord-vim/
 cp -r my/downloads/clone/nord-vim/colors .config/vim/
+cp my/downloads/clone/nord-vim/autoload/airline/themes/* .config/vim/pack/plugins/start/vim-airline-themes/autoload/airline/themes/
 
 echo "=====:=====:=====           Rebuilding Vim           =====:=====:====="
 cd my/downloads/clone/vim-git/
@@ -57,7 +58,7 @@ sudo pacman -S  texlive{-most,-lang,-bibtexextra}
 echo "=====:=====:=====       Installing Virtual Box       =====:=====:====="
 sudo pacman -S virtualbox
 sudo modprobe vboxdrv
-sudo usermod -aG vboxusers ur_username
+sudo usermod -aG vboxusers urUserName
 sudo pacman -S virtualbox-guest-{iso,utils}
 
 echo "=====:=====:=====           Install Clamav           =====:=====:====="
