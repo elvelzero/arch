@@ -16,6 +16,12 @@ sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xp
 
 sudo fc-cache -fv
 
+echo "=====:=====:=====           Rebuilding Vim           =====:=====:====="
+cd my/downloads/clone/vim-git/
+sed -i '46s/disable/enable/' PKGBUILD
+sudo pacman -Rns vim
+makepkg -si
+
 echo "=====:=====:===== Installing My Core Packages Part 2 =====:=====:====="
 sudo pacman -S --needed xmonad{,-contrib} xmobar python-pillow kitty{,-terminfo} && sudo aura -Ax google-chrome && sudo aura -Ax spacefm && sudo pacman -S --needed ranger trash-cli nitrogen picom rofi scrot yt-dlp && sudo aura -Ax i3lock-color && sudo pacman -S --asdeps perl-{libwww,image-exiftool} && sudo pacman -S --needed lxappearance qt5ct arc-gtk-theme kvantum-qt5 papirus-icon-theme imagemagick sxiv mpv celluloid ffmpeg tar unzip zip && sudo aura -Ax rar && sudo pacman -S --needed file-roller udisks2 udevil ntfs-3g gvfs{,-mtp} libmtp mtpfs && sudo aura -Ax jmtpfs && sudo pacman -S --needed libreoffice-fresh gimp inkscape obs-studio && sudo aura -Ax olive && sudo pacman -S --needed zathura{,-cb,-djvu,-pdf-mupdf,-ps}
 
