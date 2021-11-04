@@ -8,7 +8,7 @@ sudo ufw enable
 sudo ufw status verbose
 
 echo "=====:=====:=====     Make XDG Base Dirs & Move Some Items     =====:=====:====="
-mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,nvim,vim,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
+mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,nvim,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
 mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
@@ -25,7 +25,7 @@ echo "=====:=====:=====             Copying my Wallpaper             =====:=====
 sudo mkdir -p /usr/share/backgrounds/my-wallpaper/
 cp my/downloads/clone/config/*.jpg /usr/share/backgrounds/my-wallpaper/
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
-cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
+cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,ranger,rofi,wgetrc,X11,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
 echo "=====:=====:=====                 or Relogin                   =====:=====:====="
