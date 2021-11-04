@@ -21,6 +21,9 @@ mkdir my/downloads/clone
 cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
+echo "=====:=====:=====             Copying my Wallpaper             =====:=====:====="
+sudo mkdir -p /usr/share/backgrounds/my-wallpaper/
+cp my/downloads/clone/config/*.jpg /usr/share/backgrounds/my-wallpaper/
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
 cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
