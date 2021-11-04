@@ -67,6 +67,10 @@ echo "=====:=====:=====   Change Your User Password    =====:=====:====="
 passwd urUserName
 EDITOR=vim visudo
 
+echo "=====:=====:=====    editing /etc/bash.bashrc    =====:=====:====="
+cat /tmp/arch/6bashrc.txt >> /etc/bash.bashrc
+vim /etc/bash.bashrc
+
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
 cp -r /tmp/arch /home/urUserName/
 chown -R urUserName:urUserName /home/urUserName/arch
