@@ -68,6 +68,8 @@ passwd urUserName
 EDITOR=nvim visudo
 
 echo "=====:=====:=====    editing /etc/bash.bashrc    =====:=====:====="
+echo "" >> /etc/environment
+echo "QT_QPA_PLATFORMTHEME="qt5ct"" >> /etc/environment
 cat /tmp/arch/6bashrc.txt >> /etc/bash.bashrc
 nvim /etc/bash.bashrc
 
