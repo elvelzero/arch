@@ -65,11 +65,11 @@ echo "=====:=====:=====         Adding a user          =====:=====:====="
 useradd -mG wheel urUserName
 echo "=====:=====:=====   Change Your User Password    =====:=====:====="
 passwd urUserName
-EDITOR=vim visudo
+EDITOR=nvim visudo
 
 echo "=====:=====:=====    editing /etc/bash.bashrc    =====:=====:====="
 cat /tmp/arch/6bashrc.txt >> /etc/bash.bashrc
-vim /etc/bash.bashrc
+nvim /etc/bash.bashrc
 
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
 cp -r /tmp/arch /home/urUserName/
