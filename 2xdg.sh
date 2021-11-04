@@ -8,11 +8,12 @@ sudo ufw enable
 sudo ufw status verbose
 
 echo "=====:=====:=====     Make XDG Base Dirs & Move Some Items     =====:=====:====="
-mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,vim/pack/plugins/start,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
+mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,nvim,vim,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
 mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
+touch .config/nvim/init.vim
 
 echo "=====:=====:=====    Update XDG User Dirs & Clone My Config    =====:=====:====="
 xdg-user-dirs-update
