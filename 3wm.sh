@@ -3,6 +3,14 @@
 ## My arch install
 #
 
+echo "=====:=====:=====     Cloning aura-bin & vim-git     =====:=====:====="
+cd my/downloads/clone/
+git clone https://aur.archlinux.org/aura-bin.git
+git clone https://aur.archlinux.org/vim-git.git
+cd aura-bin
+makepkg -si
+cd
+
 echo "=====:=====:===== Installing My Core Packages Part 1 =====:=====:====="
 sudo pacman -S --needed polkit lxsession xorg-{server,xinit,xrandr,xbacklight,xprop,xsetroot,mkfontdir} xclip xf86-{input-libinput,video-intel} nvidia{,-utils} adobe-source-code-pro-fonts ttf-{cascadia-code,fira-code,jetbrains-mono} && sudo aura -Ax ttf-mononoki && sudo aura -Ax nerd-fonts-mononoki && sudo pacman -S --needed ttf-{baekmuk,hanazono} otf-ipafont adobe-source-han-{sans-{kr,jp},serif-{kr,jp}}-fonts
 
