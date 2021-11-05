@@ -70,7 +70,7 @@ EDITOR=vim visudo
 echo "=====:=====:=====    editing /etc/bash.bashrc    =====:=====:====="
 echo "" >> /etc/environment
 echo "QT_QPA_PLATFORMTHEME="qt5ct"" >> /etc/environment
-cat /tmp/arch/6bashrc.txt >> /etc/bash.bashrc
+cat /tmp/arch/bashrc.txt >> /etc/bash.bashrc
 vim /etc/bash.bashrc
 
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
