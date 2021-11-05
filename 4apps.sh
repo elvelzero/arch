@@ -28,6 +28,9 @@ echo "=====:=====:=====         Updating database          =====:=====:====="
 sudo freshclam
 #=====:=====:===== Im not going to enable clamav-freshclam.service & clamav-daemon.service =====:=====:=====
 
+echo "pip install pynvim"
+echo "npm install -g neovim"
+
 #"=====:=====:=====           Install ur IDE           =====:=====:====="
 # sudo aura -Ax visual-studio-code-bin
 # Kotlin with vscode: https://www.petanikode.com/kotlin-vscode/
