@@ -20,10 +20,6 @@ sudo pacman -S --needed python{,-pip,-setuptools,-wheel,-jedi} # python,-pipenv
 
 echo "=====:=====:=====  Rust   =====:=====:====="
 sudo pacman -S --needed rustup
-rustup install stable
-rustup default stable
-rustup component add rls rust-analysis rust-src clippy rustfmt
-sudo pacman -S --needed rust-racer
 
 echo "=====:=====:===== Haskell =====:=====:====="
 sudo pacman -S --needed ghc cabal-install stack
@@ -42,3 +38,8 @@ sudo pacman -S --needed mono{,-tools}
 
 echo "=====:=====:===== Gradle  =====:=====:====="
 sudo pacman -S --needed gradle
+
+echo "rustup install stable"
+echo "rustup default stable"
+echo "rustup component add rls rust-analysis rust-src clippy rustfmt"
+echo "sudo pacman -S --needed rust-racer"
