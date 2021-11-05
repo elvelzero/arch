@@ -9,9 +9,9 @@ mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
-touch .config/nvim/init.vim
 
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
-cp -r /home/urUserName/my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
+cp -r /home/urUserName/my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,nvim,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
+cp /home/urUserName/my/downloads/clone/config/.config/bash/* .config/bash/
 echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
 echo "=====:=====:=====                 or Relogin                   =====:=====:====="
