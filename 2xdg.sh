@@ -25,7 +25,7 @@ echo "=====:=====:=====             Copying my Wallpaper             =====:=====
 sudo mkdir -p /usr/share/backgrounds/my-wallpaper/
 sudo cp my/downloads/clone/config/*.jpg /usr/share/backgrounds/my-wallpaper/
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
-cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,ranger,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
+cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,ranger,rofi,nvim,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
 echo "=====:=====:=====                 or Relogin                   =====:=====:====="
