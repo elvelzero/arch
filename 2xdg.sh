@@ -13,7 +13,6 @@ mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
-touch .config/nvim/init.vim
 
 echo "=====:=====:=====    Update XDG User Dirs & Clone My Config    =====:=====:====="
 xdg-user-dirs-update
