@@ -1,0 +1,9 @@
+### THE ONLY THING U NEED ###
+### DELETE PS1=... TOO :)
+
+# source $XDG_CONFIG_HOME/bash/bashrc | default: [[ -f ~/.bashrc ]] && . ~/.bashrc
+# [[ -f ~/.config/bash/bashrc ]] && . ~/.config/bash/bashrc
+# [[ -f $HOME/.config/bash/bashrc ]] && . $HOME/.config/bash/bashrc
+[[ -f $XDG_CONFIG_HOME/bash/bashrc ]] && . $XDG_CONFIG_HOME/bash/bashrc
+
+### THE ONLY THING U NEED ###
