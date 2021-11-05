@@ -8,7 +8,7 @@ sudo ufw enable
 sudo ufw status verbose
 
 echo "=====:=====:=====     Make XDG Base Dirs & Move Some Items     =====:=====:====="
-mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,nvim,vim,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
+mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large},bundle,nv,pylint,python-eggs,vim},.config/{android,bash,bash-completion,bundle,cabal,ffmpeg,gdb,gtk-1.0,gtk-2.0,grip,java,jupyter,nvidia,npm,nvim,pg,vim/after,X11,xmonad,xmobar,sqlite3,zsh},.local/{share/{xmonad,android,azure,bundle,cabal,cargo,gdb,gnupg,go,gradle,rustup,vim,zoom},state/bash}}
 mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
@@ -23,7 +23,7 @@ git clone https://github.com/iNeobee/config
 cd
 echo "=====:=====:=====             Copying my Wallpaper             =====:=====:====="
 sudo mkdir -p /usr/share/backgrounds/my-wallpaper/
-cp my/downloads/clone/config/*.jpg /usr/share/backgrounds/my-wallpaper/
+sudo cp my/downloads/clone/config/*.jpg /usr/share/backgrounds/my-wallpaper/
 echo "=====:=====:=====            Copying my config file            =====:=====:====="
 cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,ranger,rofi,vim,wgetrc,X11,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
