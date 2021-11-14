@@ -8,7 +8,7 @@ sudo ufw enable
 sudo ufw status verbose
 
 echo "=====:=====:=====     Make XDG Base Dirs & Move Some Items     =====:=====:====="
-mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large},bundle,nv,pylint,python-eggs,vim},.config/{android,bash,bash-completion,bundle,cabal,ffmpeg,gdb,gtk-1.0,gtk-2.0,grip,java,jupyter,nvidia,npm,nvim,pg,vim/after,X11,xmonad,xmobar,sqlite3,zsh},.local/{share/{xmonad,android,azure,bundle,cabal,cargo,gdb,gnupg,go,gradle,rustup,vim,zoom},state/bash}}
+mkdir -p ~/{.cache/{xmonad,X11,thumbnails/{fail,large,normal,x-large,xx-large},bundle,nv,pylint,python-eggs,vim},.config/{android,bash,bash-completion,bundle,cabal,ffmpeg,gdb,gtk-1.0,gtk-2.0,grip,java,jupyter,nvidia,npm,nvim,pg,vim/after,X11,xmonad,xmobar,sqlite3,zsh},.local/{share/{xmonad,android,azure,bundle,cabal,cargo,gdb,gnupg,go,gradle,rustup,vim,zoom},state/bash}}
 mv .bash* .config/bash/
 mv .config/bash/.bash_logout .config/bash/bash_logout
 mv .config/bash/.bash_profile .config/bash/bash_profile
